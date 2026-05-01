@@ -1,32 +1,42 @@
 # market dataset finder
 
-a python tool that searches public dataset platforms for e-commerce, product review, customer behaviour, and market research datasets.
+a python portfolio project for discovering, ranking, and analysing public e-commerce and product-review datasets.
 
 ## what it does
 
-- searches hugging face datasets using multiple market-research keywords
-- removes duplicate datasets
-- scores results using relevance, downloads, and likes
-- classifies datasets by use case
-- exports results to csv and excel
-- formats the excel file with filters, frozen headers, and readable column widths
+- searches hugging face for e-commerce, product-review, customer behaviour, and market-research datasets
+- removes duplicate dataset results
+- scores datasets using relevance, downloads, likes, metadata quality, licence/access checks, and keyword matching
+- classifies datasets by likely use case
+- exports a formatted excel shortlist
+- analyses one selected amazon review dataset
+- compares positive and negative review language
+- exports summary tables and charts
 
-## current output
+## project files
 
-the tool creates:
+- `main.py` - searches and ranks datasets
+- `analyse_dataset.py` - analyses a selected product-review dataset
+- `requirements.txt` - python dependencies
+- `.gitignore` - excludes generated outputs and local environment files
+
+## outputs
+
+the project can generate:
 
 - `dataset_results.csv`
 - `dataset_results.xlsx`
+- `analysis_outputs/analysis_summary.xlsx`
+- `analysis_outputs/negative_phrases.png`
+- `analysis_outputs/positive_phrases.png`
+- `analysis_outputs/sentiment_distribution.png`
+
+generated outputs are not committed to git because they can be recreated by running the scripts.
 
 ## how to run
 
+create and activate a virtual environment:
+
 ```powershell
-python main.py
-
-
-documents what the project does so it looks like a real portfolio project, not just loose code.
-
-save it:
-
-```text id="8t760h"
-ctrl + s
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
