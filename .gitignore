@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .env
 .ipynb_checkpoints/
+
+dataset_results.csv
+dataset_results.xlsx
