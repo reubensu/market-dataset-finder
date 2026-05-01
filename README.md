@@ -41,8 +41,3 @@ create and activate a virtual environment:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-
-then save it.
-
-```powershell
-git status
