@@ -1,9 +1,16 @@
 .venv/
+venv/
+env/
 __pycache__/
 *.pyc
+.DS_Store
+.matplotlib_cache/
 .env
+.env.*
+!.env.example
 .ipynb_checkpoints/
 
 dataset_results.csv
 dataset_results.xlsx
+run_log.txt
 analysis_outputs/
